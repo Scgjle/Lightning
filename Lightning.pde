@@ -22,7 +22,7 @@ void mousePressed()
 void drawLightning() {
   strokeWeight(5);
   stroke(255); // white lightning
-  float x = 800 / 2; // start in the middle horizontally
+  float x = 400; // start in the middle horizontally
   float y = 0;         // start at the top
 
   while (y < 600) {
