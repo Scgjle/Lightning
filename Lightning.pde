@@ -1,11 +1,10 @@
-void setup()
-{
+void setup() {
   size(800, 600);
   strokeWeight(2);
   background(0);
 }
-void draw()
-{
+
+void draw() {
   background(0);
 
   stroke(150, 200, 255); // light blue
@@ -13,16 +12,17 @@ void draw()
     float x = random(800);
     float y = random(600);
     line(x, y, x, y + 10);
+  }
 }
-void mousePressed()
-{
+
+void mousePressed() {
   drawLightning();
 }
 
 void drawLightning() {
   strokeWeight(5);
   stroke(255); // white lightning
-  float x = 400; // start in the middle horizontally
+  float x = 800 / 2; // start in the middle horizontally
   float y = 0;         // start at the top
 
   while (y < 600) {
